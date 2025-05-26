@@ -2,7 +2,7 @@ CREATE TABLE rangers (
     ranger_id SERIAL PRIMARY KEY,
     name VARCHAR(20) NOT NULL,
     region VARCHAR(50) NOT NULL
-)
+);
 
 CREATE TABLE species (
     species_id SERIAL PRIMARY KEY,
@@ -10,7 +10,7 @@ CREATE TABLE species (
     scientific_name VARCHAR(100) NOT NULL,
     discovery_date DATE NOT NULL,
     conservation_status VARCHAR(50) NOT NULL
-)
+);
 
 CREATE TABLE sightings (
     sighting_id SERIAL PRIMARY KEY,
@@ -21,7 +21,7 @@ CREATE TABLE sightings (
     notes TEXT,
     FOREIGN KEY (ranger_id) REFERENCES rangers(ranger_id),
     FOREIGN KEY (species_id) REFERENCES species(species_id)
-)
+);
 
 
 INSERT INTO rangers (name, region) 
