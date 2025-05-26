@@ -35,8 +35,6 @@ VALUES
 
 
 
-
-
 INSERT INTO species (common_name, scientific_name, discovery_date, conservation_status)
 VALUES
 ('Snow Leopard', 'Panthera uncia', '1775-01-01', 'Endangered'),
@@ -49,7 +47,6 @@ VALUES
 ('Grizzly Bear', 'Ursus arctos', '1900-01-01', 'Endangered'),
 ('Moose', 'Alces alces', '1900-01-01', 'Vulnerable'),
 ('Red Fox', 'Vulpes vulpes', '1900-01-01', 'Endangered');
-               |
 
 
 INSERT INTO sightings (ranger_id, species_id, sighting_time, location, notes)
