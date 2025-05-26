@@ -23,27 +23,22 @@ CREATE TABLE sightings (
     FOREIGN KEY (species_id) REFERENCES species(species_id)
 )
 
+
 INSERT INTO rangers (name, region) 
 VALUES 
 ('Alice Green', 'Northern Hills'),
 ('Bob White', 'River Delta'),
-('Carol King', 'Mountain Range'),
-('Charlie Red', 'Eastern Forest'),
-('Diana Yellow', 'Western Plains'),
-('Eve Purple', 'Central Valley');
+('Carol King', 'Mountain Range');
+
 
 INSERT INTO species (common_name, scientific_name, discovery_date, conservation_status)
 VALUES
 ('Snow Leopard', 'Panthera uncia', '1775-01-01', 'Endangered'),
 ('Bengal Tiger', 'Panthera tigris tigris', '1758-01-01', 'Endangered'),
 ('Red Panda', 'Ailurus fulgens', '1825-01-01', 'Vulnerable'),
-('Asiatic Elephant', 'Elephas maximus indicus', '1758-01-01', 'Endangered'),
-('Bald Eagle', 'Haliaeetus leucocephalus', '1960-01-01', 'Vulnerable'),
-('Black Bear', 'Ursus americanus', '1970-01-01', 'Endangered'),
-('Coyote', 'Coyote', '1800-01-01', 'Vulnerable'),
-('Grizzly Bear', 'Ursus arctos', '1900-01-01', 'Endangered'),
-('Moose', 'Alces alces', '1900-01-01', 'Vulnerable'),
-('Red Fox', 'Vulpes vulpes', '1900-01-01', 'Endangered');
+('Asiatic Elephant', 'Elephas maximus indicus', '1758-01-01', 'Endangered');
+
+
 
 INSERT INTO sightings (ranger_id, species_id, sighting_time, location, notes)
 VALUES
